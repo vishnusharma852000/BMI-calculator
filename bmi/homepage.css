@@ -1,0 +1,93 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.mainscreen{
+    width: 100%;
+    display: flex;
+}
+.frame{
+    width: 62%;
+}
+.head{
+    width: 900px;
+    height: 320px;
+    background-color: aquamarine;
+    border: 5px solid aquamarine;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+.first{
+    width: 700px;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 33px 100px;
+    text-align: center;
+}
+.first h1{
+    font-size: 80px;
+    color: brown;
+}
+.first p{
+    font-size: 25px;
+    color: chocolate;
+    font-weight: bold;
+}
+.content{
+    width: 900px;
+    height: 450px;
+    background-color: black;
+    border: 5px solid black;
+    border-radius: 5px;
+    margin: auto;
+}
+.bmi{
+    text-align: center;
+}
+.bmi label{
+    font-size: 40px;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+}
+.bmi input#height{
+    padding: 20px;
+    color: grey;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 40px;
+    margin: 10px;
+}
+.bmi input#weight{
+    padding: 20px;
+    color: grey;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 40px;
+    margin: 10px;
+}
+.bmi input#calbtn{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+    margin: 60px;
+}
+.btn{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-size: 40px;
+    margin: 60px;
+}
+.imagefram{
+    width: 38%
+}
+.imagefram img{
+    width: 570px;
+    height: 800px;
+    margin: 20px 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}

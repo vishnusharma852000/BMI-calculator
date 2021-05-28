@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <title>BMI Calculator-2021</title>
+</head>
+<body>
+    <script>
+        function bmicalculate(){
+            let height=document.getElementById("height").value;
+            let weight=document.getElementById("weight").value;
+            let denom=height * height;
+    
+            let bmi=weight/denom;
+            document.getElementById("calbtn").value=bmi;   
+        }
+
+        function reset(){
+            document.getElementById("height").value="0 in meters";
+            document.getElementById("weight").value="0 in kg";
+            document.getElementById("calbtn").value="Calculate";
+        }
+    </script>
+    <div class="mainscreen">
+        <div class="frame">
+            <div class="main">
+                <div class="head">
+                    <div class="first">
+                        <h1>BMI Calculator</h1>
+                        <p>Calculate your BMI</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="bmi">
+                        <label for="label1">HEIGHT</label>
+                        <input type="text" name="label1" id="height" value="0 in meters"><br>
+                        <label for="label2">WEIGHT</label>
+                        <input type="text" name="label2" id="weight" value="0 in kg"><br>
+                        <input type="submit" class="btn" id="calbtn" onclick="bmicalculate()" value="Calculate">>
+                        <button class="btn" id="resetbtn" onclick="reset()">Reset</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="imagefram">
+            <img src="bmi.jpg" alt="no img">
+        </div>
+    </div>
+</body>
+</html>
